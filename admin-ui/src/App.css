@@ -1,0 +1,75 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: #151d26;
+    color: #9ac6ea
+}
+
+main {
+    display: grid;
+    grid-template-areas: "map map map map controls";
+    width: 100%;
+    height: 100%;
+}
+
+.map-view {
+    grid-area: map;
+}
+
+.controls {
+    grid-area: controls;
+}
+
+.set-terrain {
+    display: flex;
+    flex-direction: column;
+}
+
+.set-terrain h3 {
+    text-align: center;
+}
+
+.set-terrain button {
+    font-size: 20pt;
+    height: 2rem;
+    margin: 0.2rem 0;
+    cursor: pointer;
+    border: solid 1px transparent;
+}
+
+.set-terrain button.active {
+    border-color: black;
+    color: white;
+}
+
+.set-terrain button.sea {
+    background-color: #4343f3;
+}
+
+.set-terrain button.sea.active {
+    background-color: #1414f1;
+}
+
+.set-terrain button.grassland {
+    background-color: #487a46;
+}
+
+.set-terrain button.grassland.active {
+    background-color: #036400;
+}
+
+.set-terrain button.hills {
+    background-color: #1f7a33;
+}
+
+.set-terrain button.hills.active {
+    background-color: #002f0b;
+}
+
+.set-terrain button.mountain {
+    background-color: #4f757a;
+}
+
+.set-terrain button.mountain.active {
+    background-color: #003742;
+}

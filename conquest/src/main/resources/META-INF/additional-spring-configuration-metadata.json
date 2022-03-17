@@ -1,0 +1,14 @@
+{
+  "properties": [
+    {
+      "name": "browne.chris.conquest.redis.connection-string",
+      "type": "java.lang.String",
+      "description": "Redis database connection string."
+    },
+    {
+      "name": "browne.chris.conquest.game.settings.base-troops-per-territory",
+      "type": "java.lang.Long",
+      "description": "(Base) number of troops awarded per captured territory."
+    }
+  ]
+}

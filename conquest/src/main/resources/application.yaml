@@ -1,0 +1,19 @@
+browne:
+  chris:
+    conquest:
+      game:
+        settings:
+          base-troops-per-territory: 5
+      redis:
+        connection-string: redis://localhost/0
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: conquest
+    password: conquest
+    virtual-host: conquest
+
+logging.level:
+  browne.chris.conquest: debug
+  org.springframework.web: debug
